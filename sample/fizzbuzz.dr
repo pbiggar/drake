@@ -1,0 +1,11 @@
+# Write a program that prints the numbers from 1 to 100. But for multiples of
+# three print "Fizz" instead of the number and for the multiples of five print
+# "Buzz". For numbers which are multiples of both three and five print
+# "FizzBuzz"
+
+1.upto 1000 as i:
+  switch i:
+      i.mod 15 eq 0: "FizzBuzz".print
+      i.mod 5 eq 0: "Buzz".print
+      i.mod 3 eq 0: "Fizz".print
+      default: i.str.print
